@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class PoliticoLoco {
+public class PolíticoLoco {
 	static String respuestas[]={
 			"Tienes toda la razón, y está totalmente planteado en nuestro proyecto",
 			"Si",
@@ -21,7 +21,7 @@ public class PoliticoLoco {
 	static int numeroMaximo=respuestas.length;
 	//Esta función devolverá una rrespuesta aleatoria de nuestro político loco
 	public static String devolverRespuesta(){
-		int numeroDentroDelArray = rn.nextInt(numeroMaximo - numeroMinimo + 1) + numeroMinimo;
+		int numeroDentroDelArray = rn.nextInt(numeroMaximo);
 		
 		return respuestas[numeroDentroDelArray];
 	}
